@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="script.js"></script>
+    <title>Contact Us | LifeStream Blood Services</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="LifeStream Blood Services Logo" id="logo">
+        </a>
+        <h1>LifeStream Blood Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Eligibility</a></li>
+                <li><a href="#">Donor Recognition</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0408482872873!2d-79.38714848452688!3d43.65957117912151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb60c53d6225%3A0x10e7e73de7e7269b!2s14%20College%20St%2C%20Toronto%2C%20ON%20M5G%201K2%2C%20Canada!5e0!3m2!1sen!2sus!4v1640388272615!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><b>Address:</b> 14 College St, Toronto, ON, Canada</p>
+            <p><b>Email:</b> <a href="mailto:contact@lifestream.org" id="emailLink">contact@lifestream.org</a></p>
+            <p><b>Phone:</b> +1 (123) 456-7890</p>
+        </div>
+        <h2>Let's get in touch</h2>
+        <form id="contactForm" action="#" method="post">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Message:</legend>
+                    <label for="messageDate">Date of Message:</label>
+                    <input type="date" id="messageDate" name="messageDate" required>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Subscribe to our newsletter:</legend>
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" onchange="toggleInterestCheckboxes()">
+                <label for="newsletter">Subcribe</label>
+
+                <div id="interestSection" style="display: none;">
+                    <label for="interest">Areas of interest:</label>
+                    <input type="checkbox" id="health" name="interest" value="health">
+                    <label for="health">Health Initiatives</label>
+                    <input type="checkbox" id="events" name="interest" value="events">
+                    <label for="events">Upcoming Events</label>
+                    <input type="checkbox" id="volunteer" name="interest" value="volunteer">
+                    <label for="volunteer">Volunteer Opportunities</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred contact method for follow up:</legend>
+                <input type="radio" id="emailContact" name="contactMethod" value="email" onchange="toggleContactFields()">
+                <label for="emailContact">Email</label>
+                <input type="radio" id="phoneContact" name="contactMethod" value="phone" onchange="toggleContactFields()">
+                <label for="phoneContact">Phone</label>
+            </fieldset>
+            <div id="submitButton">
+                <input type="submit" value="Submit">
+            </div>
+          </form>
+    </main>
+
+    <aside>
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="images/Apheresis Centre.jpg" alt="Apheresis Centre" id="slideShow">
+                <img src="images/Blood donation.jpg" alt="Blood Donation" id="slideShow">
+                <img src="images/Blood type.png" alt="Blood Type" id="slideShow">
+            </div>
+        </div>        
+    </aside>
+
+    <footer>
+        <p>Copyright &copy; 2023 LifeStream Blood Services.</p>
+        <p>LifeStream Blood Services | 14 College St, Toronto, ON, Canada</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, aside, footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 20px; 
+}
+
+.logo-img {
+    width: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5%;
+}
+
+main {
+    width: 70%;
+    float: left;
+}
+
+aside {
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    float: right;
+    background-color: rgb(206, 191, 191)1b1;
+}
+
+.donation-process {
+    display: flex;
+}
+
+.donation-process img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+
+#blood-compatibility {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#blood-compatibility th, #blood-compatibility td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#main-form-heading{
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 166, 154);
+    text-align: center;
+    letter-spacing: 0.5px;
+    width:50% ;
+  margin : 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+label:hover {
+    font-weight: bold;
+}
+
+label.active {
+    color: rgb(66, 0, 0);
+}
+
+.slideshow-container {
+    margin: 0 auto;
+    width: 500px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+.slideshow img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
